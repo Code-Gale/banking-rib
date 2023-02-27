@@ -1,0 +1,38 @@
+
+<html>
+</head>
+	<meta charset="utf-8">
+	<title>Online Banking|welcome</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+<h1>Online Banking</h1>
+<?php
+
+//include "connection.php";
+
+
+?>
+<form action="login-3.php" method="get" class="loginform">
+	<label class="SL">Revolut International Bank</label><br>
+	<label class="AfterSL">Deposit</label>
+	<p>Account Number:</p><br>
+	<input type="text" placeholder="AccountNumber"  name="AccountNumber" value="" required="required"><br>
+	<p>UserName</p>
+	<input type="text" placeholder="username"  name="username" value="" required="required"><br>
+	<p>Money that Deposit(Rs.)</p>
+	<input type="text" placeholder="money"  name="money" value="" required="required"><br>
+	<p>Password:</p><br>
+	<input type="text" placeholder="account"  name="acc" value="" required="required"><br>
+	<button type="submit" name="log" class="btn">Login</button><br>
+	
+</form>
+<?php
+
+include "login.php";
+
+$conn->close();
+?>
+
+</body>
+</html>
